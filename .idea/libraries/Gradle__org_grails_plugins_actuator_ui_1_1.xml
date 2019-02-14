@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.grails.plugins:actuator-ui:1.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/actuator-ui/1.1/ca1518b8491be8f1c72944d655b4a32611153e79/actuator-ui-1.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.grails.plugins/actuator-ui/1.1/ba0b728c14b8c3ac0c4c304c72400723b40612ce/actuator-ui-1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

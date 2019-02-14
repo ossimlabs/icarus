@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app.iml" group="icarus-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app_integrationTest.iml" group="icarus-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app_main.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app_main.iml" group="icarus-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app_test.iml" filepath="$PROJECT_DIR$/.idea/modules/apps/icarus-app/icarus-app_test.iml" group="icarus-app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin.iml" group="icarus-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_ast.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_ast.iml" group="icarus-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_integrationTest.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_integrationTest.iml" group="icarus-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_main.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_main.iml" group="icarus-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_test.iml" filepath="$PROJECT_DIR$/.idea/modules/plugins/icarus-plugin/icarus-plugin_test.iml" group="icarus-plugin" />
+      <module fileurl="file://$PROJECT_DIR$/icarus2.iml" filepath="$PROJECT_DIR$/icarus2.iml" />
+    </modules>
+  </component>
+</project>

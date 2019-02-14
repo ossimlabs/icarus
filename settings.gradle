@@ -1,0 +1,5 @@
+include 'icarus-app'
+include 'icarus-plugin'
+
+project (':icarus-app').projectDir = "${rootProject.projectDir}/apps/icarus-app" as File
+project (':icarus-plugin').projectDir = "${rootProject.projectDir}/plugins/icarus-plugin" as File

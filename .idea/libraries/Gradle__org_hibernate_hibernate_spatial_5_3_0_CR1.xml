@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.hibernate:hibernate-spatial:5.3.0.CR1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-spatial/5.3.0.CR1/c3cf0ae17a7e63a91074e886cbacf3f74f957ff5/hibernate-spatial-5.3.0.CR1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate/hibernate-spatial/5.3.0.CR1/3b357d691feecf43dd506a7cf04a4abeda4fc05c/hibernate-spatial-5.3.0.CR1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
