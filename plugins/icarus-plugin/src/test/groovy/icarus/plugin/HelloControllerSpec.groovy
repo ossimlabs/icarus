@@ -10,5 +10,5 @@ class HelloControllerSpec extends Specification implements ControllerUnitTest<He
 
     def cleanup() {
     }
-    
+
 }
