@@ -7,5 +7,5 @@ EXPOSE 8080
 COPY *.jar $HOME
 CMD $HOME/run.sh
 USER root
-yum install -y bind-utils iputils
+RUN yum install -y bind-utils iputils
 USER omar
