@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: org.grails:grails-web-testing-support:3.2.7">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Could not find org.grails:grails-web-testing-support:3.2.7.&#10;Searched in the following locations:&#10;  - file:/Users/tculp/.m2/repository/org/grails/grails-web-testing-support/3.2.7/grails-web-testing-support-3.2.7.pom&#10;  - file:/Users/tculp/.m2/repository/org/grails/grails-web-testing-support/3.2.7/grails-web-testing-support-3.2.7.jar&#10;  - https:/repo.grails.org/grails/core/org/grails/grails-web-testing-support/3.2.7/grails-web-testing-support-3.2.7.pom&#10;  - https:/repo.grails.org/grails/core/org/grails/grails-web-testing-support/3.2.7/grails-web-testing-support-3.2.7.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

@@ -6,3 +6,6 @@ WORKDIR $HOME
 EXPOSE 8080
 COPY *.jar $HOME
 CMD $HOME/run.sh
+USER root
+RUN yum install -y bind-utils iputils
+USER omar

@@ -8,7 +8,7 @@ buildscript {
         classpath "org.grails.plugins:hibernate5:${gormVersion-".RELEASE"}"
         classpath "com.bertramlabs.plugins:asset-pipeline-gradle:2.14.8"
         classpath 'com.bmuschko:gradle-docker-plugin:3.0.12'
-        classpath 'io.ossim:gradleDefaults:1.4-SNAPSHOT'
+        classpath 'io.ossim:gradleDefaults:1.7-SNAPSHOT'
     }
 }
 
@@ -35,9 +35,7 @@ io.ossim.gradleDefaults.Variables.setVersionVariables(project)
 dockerBuildDir="${rootProject.projectDir}/docker"
 version "${buildVersion}-${buildVersionTag}"
 jarDestination = "${projectDir}/build/libs/${project.name}-${version}.jar"
-io.ossim.gradleDefaults.Publications.addPublication(project, groupName, name, "${buildVersion}-${buildVersionTag}")
-io.ossim.gradleDefaults.Publications.addRepository(project, mavenPublishUrl, mavenRepoUsername, mavenRepoPassword)
-io.ossim.gradleDefaults.Docker.addDockerTasks(project, dockerRegistryUrl, dockerRegistryUsername, dockerRegistryPassword, name, dockerTag, dockerBuildDir, jarDestination, ["BASE_IMAGE": dockerBaseImage])
+io.ossim.gradleDefaults.Docker.addDockerTasks(project, dockerRegistryUrl, dockerRegistryUsername, dockerRegistryPassword, name, dockerImageTag, dockerBuildDir, jarDestination, ["BASE_IMAGE": "${dockerRegistryUrl}/${dockerBaseImage}:${dockerFromTag}"])
 io.ossim.gradleDefaults.Openshift.addOpenshiftTasks(project, openshiftUrl, openshiftUsername, openshiftPassword, openshiftProjectName, openshiftServiceName,  dockerRegistryUrl, name, dockerImageTag)
 
 dependencies {
@@ -68,7 +66,7 @@ dependencies {
     runtime "org.apache.tomcat:tomcat-jdbc"
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:2.14.8"
     testCompile "org.grails:grails-gorm-testing-support"
-    testCompile "org.grails:grails-web-testing-support:3.2.7"
+    testCompile "org.grails:grails-web-testing-support"
     testCompile "org.grails.plugins:geb:1.1.2"
     testRuntime "org.seleniumhq.selenium:selenium-chrome-driver:2.47.1"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"

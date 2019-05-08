@@ -4,9 +4,10 @@ properties([
         booleanParam(name: 'CLEAN_WORKSPACE', defaultValue: true, description: 'Clean the workspace at the end of the run')
     ]),
     pipelineTriggers([
-            [$class: "GitHubPushTrigger"],
-            pollSCM('H/2 * * * *')
-    ])
+            [$class: "GitHubPushTrigger"]
+    ]),
+    [$class: 'GithubProjectProperty', displayName: '', projectUrlStr: 'https://github.com/ossimlabs/icarus'],
+    disableConcurrentBuilds()
 ])
 
 node("${BUILD_NODE}"){
@@ -18,10 +19,12 @@ node("${BUILD_NODE}"){
 
     stage("Load Variables")
     {
-        step ([$class: "CopyArtifact",
-        projectName: "ossim-ci",
-           filter: "common-variables.groovy",
-           flatten: true])
+        withCredentials([string(credentialsId: 'o2-artifact-project', variable: 'o2ArtifactProject')]) {
+            step ([$class: "CopyArtifact",
+                projectName: o2ArtifactProject,
+                filter: "common-variables.groovy",
+                flatten: true])
+        }
 
         load "common-variables.groovy"
     }
